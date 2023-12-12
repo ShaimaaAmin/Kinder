@@ -1,0 +1,230 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;  
+  letter-spacing: .05em;
+  line-height: 1rem;
+  font-family: Poppins, sans-serif;
+}
+body{
+  background-color: rgba(241, 229, 212, 0.2);
+}
+/* Here is all you need to know about relative file paths: 
+1- Starting with “/” returns to the root directory and starts there 
+2- Starting with “../” moves one directory backwards and starts there 
+3- Starting with “../../” moves two directories backwards and starts there (and so on…) 
+4- To move forward, just start with the first subdirectory and keep moving forward */
+
+.main-container{
+  background-image: url('../../images/multicolor-dots-pattern-background.png');
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  height: 100vh;
+}
+
+.cls-logo{
+  font-family: Kablammo,sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  vertical-align: center;
+}
+.cls-address{
+  font-weight: 600;
+  font-size: .9rem; 
+  vertical-align: center;
+  text-align: right;
+}
+.cls-address-span{
+  font-size: .7rem;
+}
+/* slideContainer */
+#slideContainer{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+#carouselExampleDark .carousel-item {
+  height: 70vh;
+}
+#carouselExampleDark .carousel-item::before {
+  content: "";
+  background-image: linear-gradient(0,0,0,0.9);
+  display: block;
+  position: absolute;
+  top:0;
+  width:100%;
+  height: 100%;
+}
+#carouselExampleDark .carousel-indicators{
+  background-color: white;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#carouselExampleDark .btn-circle{
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border-radius: 50%;
+}
+#carouselExampleDark .btn-circle:active,#carouselExampleDark .btn-circle:hover{
+  width: 25px;
+  height: 25px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  /* min-height: 70vh; */
+  object-fit: fill;
+}
+.carousel-item h3{
+  display: inline-block;
+  background-color: #ff7c0157;
+  color:#FF7D01;
+}
+.carousel-item p {
+  display: block;
+  background-color: #ff7c0157;
+  color: #FF7D01;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* portfolio */
+#portfolio{
+  background-color: rgba(241, 229, 212, 0.4);
+}
+.cls-portfolio-card {
+  background: rgb(154, 184, 34);
+  height: 100vh;
+}
+.cls-welcome-card {
+  background: #FAAD00;
+  height: 100vh;
+}
+.cls-teachers-card {
+  background: #3B5FB3;
+  height: 100vh;
+}
+
+
+#portfolio h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-bottom: 2rem;
+}
+
+
+
+.cls-list-row{
+  border-bottom: 1px dashed #CCCCCC;
+}
+.cls-last-program-row{
+  border-bottom:none;
+}
+.cls-list-item-program{
+  padding: 20px 0;
+  padding-left: 0.5em;
+  min-height: 3em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cls-list-numbers-program{
+  display: inline-block;
+  padding-top:30%;
+  border-radius: 50%;
+  width:3rem;
+  height: 3rem;
+  background: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Homemade Apple', cursive;
+}
+
+/* .cls-list-numbers-program:before,
+.cls-list-numbers-program:after {
+  content: '\200B';
+} */
+
+
+
+
+
+/* ourActivities */
+#ourActivities{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 1rem;
+  height: 100vh;
+
+}
+#ourActivities .cls-card{
+  width:30%;
+  display: inline-block;
+  text-align: center;
+  height: 50vh;
+  background-color: floralwhite;
+}
+.cls-activity-icon{
+  display: block;
+  position: relative;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+.cls-activity-icon::before{
+  content: "";
+  width: 40%;
+  border-top: dashed 2px gainsboro;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.cls-activity-icon::after {
+  content: "";
+  width: 40%;
+  border-top:dashed 2px gainsboro;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.cls-card h3{
+  line-height: 2rem;
+  /* padding-bottom: 10px; */
+  margin: 0 auto;
+}
+
+.cls-card p {
+  line-height: 1.5rem;
+  letter-spacing: .25rem;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+/* Categories */
+#category {
+  background-color: rgba(241, 229, 212, 0.4);
+  border-top: dashed 2px gainsboro;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  margin-top:5rem;
+  padding-top: 5rem;
+}
